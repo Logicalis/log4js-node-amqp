@@ -134,8 +134,8 @@ log4js.configure({
     {
       type: 'log4js-node-amqp',
       // more config here
-      logEventInterceptor: function(logEvent, additionalInfo) {
-        return (logEvent.data || {}).message; // send a simple string to the exchange
+      logEventInterceptor: function(logEvent, additionalInfo, messageProperties) {
+        return {message: (logEvent.data || {}).message, properties = messageProperties}; // send a simple string to the exchange
       }
     }
   ]
