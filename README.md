@@ -1,3 +1,14 @@
+---
+
+# WARNING
+
+## This repo has been archived!
+
+NO further developement will be made in the foreseen future.
+
+---
+
+
 log4js-node-amqp
 ================
 An AMQP appender for log4js-node
